@@ -45,10 +45,6 @@ function SignUp() {
 
     const handleGoogleAuth = async () => {
         const { mobileNumber, role } = formData;
-        if (!mobileNumber) {
-            alert("Mobile number is required");
-            return;
-        }
         setLoading(true);
         try {
             const provider = new GoogleAuthProvider();
